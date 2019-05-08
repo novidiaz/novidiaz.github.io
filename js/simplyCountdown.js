@@ -25,6 +25,7 @@
      * @returns {*|{}}
      */
     extend = function (out) {
+        console.log(out)
         var i,
             obj,
             key;
@@ -45,6 +46,7 @@
                 }
             }
         }
+        console.log()
 
         return out;
     };
@@ -115,17 +117,17 @@
      */
     simplyCountdown = function (elt, args) {
         var parameters = extend({
-                year: 2015,
-                month: 6,
-                day: 28,
-                hours: 0,
+                year: 2019,
+                month: 4,
+                day: 7,
+                hours: 8,
                 minutes: 0,
                 seconds: 0,
                 words: {
-                    days: 'day',
-                    hours: 'hour',
-                    minutes: 'minute',
-                    seconds: 'second',
+                    days: 'hari',
+                    hours: 'jam',
+                    minutes: 'menit',
+                    seconds: 'detik',
                     pluralLetter: 's'
                 },
                 plural: true,
